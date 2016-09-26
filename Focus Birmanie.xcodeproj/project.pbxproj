@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B2C3F8F1D9976A300CCB91F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2C3F8E1D9976A300CCB91F /* AppDelegate.swift */; };
+		2B2C3F911D9976A300CCB91F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2B2C3F901D9976A300CCB91F /* GameScene.sks */; };
+		2B2C3F931D9976A300CCB91F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2B2C3F921D9976A300CCB91F /* Actions.sks */; };
+		2B2C3F951D9976A300CCB91F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2C3F941D9976A300CCB91F /* GameScene.swift */; };
+		2B2C3F971D9976A300CCB91F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2C3F961D9976A300CCB91F /* GameViewController.swift */; };
+		2B2C3F9A1D9976A300CCB91F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B2C3F981D9976A300CCB91F /* Main.storyboard */; };
+		2B2C3F9C1D9976A300CCB91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2C3F9B1D9976A300CCB91F /* Assets.xcassets */; };
+		2B2C3F9F1D9976A300CCB91F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B2C3F9D1D9976A300CCB91F /* LaunchScreen.storyboard */; };
+		2B2C3FAA1D9976A300CCB91F /* Focus_BirmanieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2C3FA91D9976A300CCB91F /* Focus_BirmanieTests.swift */; };
+		2B2C3FB51D9976A300CCB91F /* Focus_BirmanieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2C3FB41D9976A300CCB91F /* Focus_BirmanieUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B2C3FA61D9976A300CCB91F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2C3F831D9976A300CCB91F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B2C3F8A1D9976A300CCB91F;
+			remoteInfo = "Focus Birmanie";
+		};
+		2B2C3FB11D9976A300CCB91F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2C3F831D9976A300CCB91F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B2C3F8A1D9976A300CCB91F;
+			remoteInfo = "Focus Birmanie";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B2C3F8B1D9976A300CCB91F /* Focus Birmanie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Focus Birmanie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2C3F8E1D9976A300CCB91F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B2C3F901D9976A300CCB91F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		2B2C3F921D9976A300CCB91F /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		2B2C3F941D9976A300CCB91F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		2B2C3F961D9976A300CCB91F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		2B2C3F991D9976A300CCB91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B2C3F9B1D9976A300CCB91F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B2C3F9E1D9976A300CCB91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B2C3FA01D9976A300CCB91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B2C3FA51D9976A300CCB91F /* Focus BirmanieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Focus BirmanieTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2C3FA91D9976A300CCB91F /* Focus_BirmanieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus_BirmanieTests.swift; sourceTree = "<group>"; };
+		2B2C3FAB1D9976A300CCB91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B2C3FB01D9976A300CCB91F /* Focus BirmanieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Focus BirmanieUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2C3FB41D9976A300CCB91F /* Focus_BirmanieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus_BirmanieUITests.swift; sourceTree = "<group>"; };
+		2B2C3FB61D9976A300CCB91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B2C3F881D9976A300CCB91F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2C3FA21D9976A300CCB91F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2C3FAD1D9976A300CCB91F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B2C3F821D9976A300CCB91F = {
+			isa = PBXGroup;
+			children = (
+				2B2C3F8D1D9976A300CCB91F /* Focus Birmanie */,
+				2B2C3FA81D9976A300CCB91F /* Focus BirmanieTests */,
+				2B2C3FB31D9976A300CCB91F /* Focus BirmanieUITests */,
+				2B2C3F8C1D9976A300CCB91F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B2C3F8C1D9976A300CCB91F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B2C3F8B1D9976A300CCB91F /* Focus Birmanie.app */,
+				2B2C3FA51D9976A300CCB91F /* Focus BirmanieTests.xctest */,
+				2B2C3FB01D9976A300CCB91F /* Focus BirmanieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B2C3F8D1D9976A300CCB91F /* Focus Birmanie */ = {
+			isa = PBXGroup;
+			children = (
+				2B2C3F8E1D9976A300CCB91F /* AppDelegate.swift */,
+				2B2C3F901D9976A300CCB91F /* GameScene.sks */,
+				2B2C3F921D9976A300CCB91F /* Actions.sks */,
+				2B2C3F941D9976A300CCB91F /* GameScene.swift */,
+				2B2C3F961D9976A300CCB91F /* GameViewController.swift */,
+				2B2C3F981D9976A300CCB91F /* Main.storyboard */,
+				2B2C3F9B1D9976A300CCB91F /* Assets.xcassets */,
+				2B2C3F9D1D9976A300CCB91F /* LaunchScreen.storyboard */,
+				2B2C3FA01D9976A300CCB91F /* Info.plist */,
+			);
+			path = "Focus Birmanie";
+			sourceTree = "<group>";
+		};
+		2B2C3FA81D9976A300CCB91F /* Focus BirmanieTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B2C3FA91D9976A300CCB91F /* Focus_BirmanieTests.swift */,
+				2B2C3FAB1D9976A300CCB91F /* Info.plist */,
+			);
+			path = "Focus BirmanieTests";
+			sourceTree = "<group>";
+		};
+		2B2C3FB31D9976A300CCB91F /* Focus BirmanieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B2C3FB41D9976A300CCB91F /* Focus_BirmanieUITests.swift */,
+				2B2C3FB61D9976A300CCB91F /* Info.plist */,
+			);
+			path = "Focus BirmanieUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B2C3F8A1D9976A300CCB91F /* Focus Birmanie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B2C3FB91D9976A300CCB91F /* Build configuration list for PBXNativeTarget "Focus Birmanie" */;
+			buildPhases = (
+				2B2C3F871D9976A300CCB91F /* Sources */,
+				2B2C3F881D9976A300CCB91F /* Frameworks */,
+				2B2C3F891D9976A300CCB91F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Focus Birmanie";
+			productName = "Focus Birmanie";
+			productReference = 2B2C3F8B1D9976A300CCB91F /* Focus Birmanie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B2C3FA41D9976A300CCB91F /* Focus BirmanieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B2C3FBC1D9976A300CCB91F /* Build configuration list for PBXNativeTarget "Focus BirmanieTests" */;
+			buildPhases = (
+				2B2C3FA11D9976A300CCB91F /* Sources */,
+				2B2C3FA21D9976A300CCB91F /* Frameworks */,
+				2B2C3FA31D9976A300CCB91F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B2C3FA71D9976A300CCB91F /* PBXTargetDependency */,
+			);
+			name = "Focus BirmanieTests";
+			productName = "Focus BirmanieTests";
+			productReference = 2B2C3FA51D9976A300CCB91F /* Focus BirmanieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B2C3FAF1D9976A300CCB91F /* Focus BirmanieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B2C3FBF1D9976A300CCB91F /* Build configuration list for PBXNativeTarget "Focus BirmanieUITests" */;
+			buildPhases = (
+				2B2C3FAC1D9976A300CCB91F /* Sources */,
+				2B2C3FAD1D9976A300CCB91F /* Frameworks */,
+				2B2C3FAE1D9976A300CCB91F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B2C3FB21D9976A300CCB91F /* PBXTargetDependency */,
+			);
+			name = "Focus BirmanieUITests";
+			productName = "Focus BirmanieUITests";
+			productReference = 2B2C3FB01D9976A300CCB91F /* Focus BirmanieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B2C3F831D9976A300CCB91F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = appedufun;
+				TargetAttributes = {
+					2B2C3F8A1D9976A300CCB91F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = X69Z284G87;
+						ProvisioningStyle = Automatic;
+					};
+					2B2C3FA41D9976A300CCB91F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = X69Z284G87;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2B2C3F8A1D9976A300CCB91F;
+					};
+					2B2C3FAF1D9976A300CCB91F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = X69Z284G87;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2B2C3F8A1D9976A300CCB91F;
+					};
+				};
+			};
+			buildConfigurationList = 2B2C3F861D9976A300CCB91F /* Build configuration list for PBXProject "Focus Birmanie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B2C3F821D9976A300CCB91F;
+			productRefGroup = 2B2C3F8C1D9976A300CCB91F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B2C3F8A1D9976A300CCB91F /* Focus Birmanie */,
+				2B2C3FA41D9976A300CCB91F /* Focus BirmanieTests */,
+				2B2C3FAF1D9976A300CCB91F /* Focus BirmanieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B2C3F891D9976A300CCB91F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2C3F9A1D9976A300CCB91F /* Main.storyboard in Resources */,
+				2B2C3F911D9976A300CCB91F /* GameScene.sks in Resources */,
+				2B2C3F9C1D9976A300CCB91F /* Assets.xcassets in Resources */,
+				2B2C3F9F1D9976A300CCB91F /* LaunchScreen.storyboard in Resources */,
+				2B2C3F931D9976A300CCB91F /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2C3FA31D9976A300CCB91F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2C3FAE1D9976A300CCB91F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B2C3F871D9976A300CCB91F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2C3F951D9976A300CCB91F /* GameScene.swift in Sources */,
+				2B2C3F971D9976A300CCB91F /* GameViewController.swift in Sources */,
+				2B2C3F8F1D9976A300CCB91F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2C3FA11D9976A300CCB91F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2C3FAA1D9976A300CCB91F /* Focus_BirmanieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2C3FAC1D9976A300CCB91F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2C3FB51D9976A300CCB91F /* Focus_BirmanieUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B2C3FA71D9976A300CCB91F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B2C3F8A1D9976A300CCB91F /* Focus Birmanie */;
+			targetProxy = 2B2C3FA61D9976A300CCB91F /* PBXContainerItemProxy */;
+		};
+		2B2C3FB21D9976A300CCB91F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B2C3F8A1D9976A300CCB91F /* Focus Birmanie */;
+			targetProxy = 2B2C3FB11D9976A300CCB91F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B2C3F981D9976A300CCB91F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B2C3F991D9976A300CCB91F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B2C3F9D1D9976A300CCB91F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B2C3F9E1D9976A300CCB91F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B2C3FB71D9976A300CCB91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		2B2C3FB81D9976A300CCB91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B2C3FBA1D9976A300CCB91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X69Z284G87;
+				INFOPLIST_FILE = "Focus Birmanie/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "appedufun-gmail.com.Focus-Birmanie";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2B2C3FBB1D9976A300CCB91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X69Z284G87;
+				INFOPLIST_FILE = "Focus Birmanie/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "appedufun-gmail.com.Focus-Birmanie";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2B2C3FBD1D9976A300CCB91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X69Z284G87;
+				INFOPLIST_FILE = "Focus BirmanieTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "appedufun-gmail.com.Focus-BirmanieTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Focus Birmanie.app/Focus Birmanie";
+			};
+			name = Debug;
+		};
+		2B2C3FBE1D9976A300CCB91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X69Z284G87;
+				INFOPLIST_FILE = "Focus BirmanieTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "appedufun-gmail.com.Focus-BirmanieTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Focus Birmanie.app/Focus Birmanie";
+			};
+			name = Release;
+		};
+		2B2C3FC01D9976A300CCB91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = X69Z284G87;
+				INFOPLIST_FILE = "Focus BirmanieUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "appedufun-gmail.com.Focus-BirmanieUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Focus Birmanie";
+			};
+			name = Debug;
+		};
+		2B2C3FC11D9976A300CCB91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = X69Z284G87;
+				INFOPLIST_FILE = "Focus BirmanieUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "appedufun-gmail.com.Focus-BirmanieUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Focus Birmanie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B2C3F861D9976A300CCB91F /* Build configuration list for PBXProject "Focus Birmanie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2C3FB71D9976A300CCB91F /* Debug */,
+				2B2C3FB81D9976A300CCB91F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B2C3FB91D9976A300CCB91F /* Build configuration list for PBXNativeTarget "Focus Birmanie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2C3FBA1D9976A300CCB91F /* Debug */,
+				2B2C3FBB1D9976A300CCB91F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2B2C3FBC1D9976A300CCB91F /* Build configuration list for PBXNativeTarget "Focus BirmanieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2C3FBD1D9976A300CCB91F /* Debug */,
+				2B2C3FBE1D9976A300CCB91F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2B2C3FBF1D9976A300CCB91F /* Build configuration list for PBXNativeTarget "Focus BirmanieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2C3FC01D9976A300CCB91F /* Debug */,
+				2B2C3FC11D9976A300CCB91F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B2C3F831D9976A300CCB91F /* Project object */;
+}
