@@ -1,26 +1,395 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cuprum-Bold.ttf">
+            <string>Cuprum-Bold</string>
+        </array>
+        <array key="Cuprum-Regular.ttf">
+            <string>Cuprum-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Focus_Birmanie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
                     </layoutGuides>
-                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleAspectFit" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="85" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="K1h-mq-zLy">
+                                <rect key="frame" x="300" y="170" width="600" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
+                                <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" editingAccessoryType="detailButton" rowHeight="85" id="w3t-5P-yAn" customClass="CustomCell" customModule="Focus_Birmanie" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="600" height="85"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="w3t-5P-yAn" id="9WU-rn-9GZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yps-XD-MHr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="85"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o00-v0-sMn">
+                                                            <rect key="frame" x="88" y="9" width="480" height="55"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Cuprum-Bold" family="Cuprum" pointSize="25"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N3O-Ue-eIH">
+                                                            <rect key="frame" x="8" y="3" width="60" height="60"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.92878906250000004" green="0.77869811624150076" blue="0.64259849767066679" alpha="0.35698930369127518" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="img" destination="N3O-Ue-eIH" id="c6G-lB-cm5"/>
+                                            <outlet property="name" destination="o00-v0-sMn" id="XLy-RR-ead"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BV1-FR-VrT" id="jMs-1l-xDW"/>
+                                    <outlet property="delegate" destination="BV1-FR-VrT" id="wbC-h0-OYW"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5T0-jx-y9K" userLabel="GUIDE">
+                                <rect key="frame" x="0.0" y="-1000" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fzc-Yf-eUa" userLabel="PdfView" customClass="PDFView">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="595"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k4X-bV-vIf" userLabel="cqc">
+                                        <rect key="frame" x="40" y="600" width="900" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_cqc.png" translatesAutoresizingMaskIntoConstraints="NO" id="wvk-1V-18o">
+                                                <rect key="frame" x="0.0" y="0.0" width="900" height="150"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kT9-Hk-Q1l" userLabel="Button 2">
+                                                <rect key="frame" x="20" y="95" width="500" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Cuprum-Bold" family="Cuprum" pointSize="25"/>
+                                                <color key="tintColor" red="1" green="0.15088927917127726" blue="0.15979846541181419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button" image="radio.png" backgroundImage="bgItemcqc.png">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" image="radioOn.png" backgroundImage="bgItemcqc.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cqc_choix2_select:" destination="BV1-FR-VrT" eventType="touchDown" id="f4E-hX-uPO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mf0-lf-lQG" userLabel="Button 1">
+                                                <rect key="frame" x="20" y="33" width="500" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Cuprum-Bold" family="Cuprum" pointSize="25"/>
+                                                <state key="normal" title="Button" image="radio.png" backgroundImage="bgItemcqc.png">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <state key="selected" image="radioOn.png" backgroundImage="bgItemcqc.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cqc_choix1_select:" destination="BV1-FR-VrT" eventType="touchDown" id="faT-an-uCt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tba-kL-wtK">
+                                                <rect key="frame" x="710" y="95" width="166" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Cuprum-Regular" family="Cuprum" pointSize="25"/>
+                                                <state key="normal" title="Valider" backgroundImage="button.png">
+                                                    <color key="titleColor" red="0.48339933156967163" green="0.04410245269536972" blue="0.13830471038818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="valid_cqc:" destination="BV1-FR-VrT" eventType="touchUpInside" id="4Dq-9V-MpA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <gestureRecognizers/>
+                            </view>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YVs-Xg-XpM">
+                                <rect key="frame" x="112" y="-3000" width="850" height="600"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fgd-uQ-5sc">
+                                        <rect key="frame" x="0.0" y="0.0" width="850" height="600"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </mapView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96568888425827026" green="0.82277960070650047" blue="0.24401762032052254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIk-Dw-mxz" userLabel="menu">
+                                <rect key="frame" x="880" y="40" width="130" height="680"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="100" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ESz-aC-xRT" userLabel="buttonsConainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="691"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundBarreNav.png" translatesAutoresizingMaskIntoConstraints="NO" id="a5c-1T-E1c" userLabel="background">
+                                                <rect key="frame" x="0.0" y="30" width="127" height="650"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e3m-hB-iRw" userLabel="bag_btn" customClass="UIControl">
+                                                <rect key="frame" x="10" y="45" width="113" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btnBag.png" translatesAutoresizingMaskIntoConstraints="NO" id="5jo-Py-JOb" userLabel="background">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="109"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="the bag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4k6-Q1-RIS" userLabel="label">
+                                                        <rect key="frame" x="1" y="8" width="10" height="10"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                        </accessibility>
+                                                        <fontDescription key="fontDescription" name="Cuprum-Bold" family="Cuprum" pointSize="25"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view alpha="0.10000000000000001" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="bag_btn" translatesAutoresizingMaskIntoConstraints="NO" id="8iE-fj-MHK" userLabel="button" customClass="UIControl">
+                                                        <rect key="frame" x="16" y="0.0" width="88" height="120"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <connections>
+                                                            <action selector="sac_btn_touched:" destination="BV1-FR-VrT" eventType="touchDown" id="fFU-fX-G4U"/>
+                                                        </connections>
+                                                    </view>
+                                                </subviews>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Pz-d5-eQU" userLabel="map_btn" customClass="UIControl">
+                                                <rect key="frame" x="10" y="470" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btnMap.png" translatesAutoresizingMaskIntoConstraints="NO" id="PiW-Rt-X9b" userLabel="background">
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="80"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwO-50-7YA" userLabel="label">
+                                                        <rect key="frame" x="1" y="8" width="73" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Cuprum-Bold" family="Cuprum" pointSize="25"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view alpha="0.10000000149011612" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTY-G7-0l5" userLabel="button" customClass="UIControl">
+                                                        <rect key="frame" x="-15" y="0.0" width="115" height="80"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <connections>
+                                                            <action selector="map_btn_touched:" destination="BV1-FR-VrT" eventType="touchDown" id="bka-0n-twa"/>
+                                                        </connections>
+                                                    </view>
+                                                </subviews>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d3u-Zf-mnI" userLabel="guide_btn" customClass="UIControl">
+                                                <rect key="frame" x="10" y="320" width="100" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btnGuide.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pfu-Yf-N6i" userLabel="background">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50S-MT-7tA" userLabel="label">
+                                                        <rect key="frame" x="1" y="8" width="6" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Cuprum-Bold" family="Cuprum" pointSize="25"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view alpha="0.10000000149011612" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a3c-OO-62P" userLabel="button" customClass="UIControl">
+                                                        <rect key="frame" x="8" y="0.0" width="101" height="102"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <connections>
+                                                            <action selector="guide_btn_touched:" destination="BV1-FR-VrT" eventType="touchDown" id="IC2-bf-mkA"/>
+                                                        </connections>
+                                                    </view>
+                                                </subviews>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oEi-gg-QhL" userLabel="teaHouse_btn" customClass="UIControl">
+                                                <rect key="frame" x="10" y="180" width="100" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btnTrouvailles.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q9B-n3-xZZ" userLabel="background">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVC-Fl-s2m" userLabel="label">
+                                                        <rect key="frame" x="1" y="8" width="10" height="10"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Cuprum-Bold" family="Cuprum" pointSize="25"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view alpha="0.10000000149011612" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="343-Sj-S60" userLabel="button" customClass="UIControl">
+                                                        <rect key="frame" x="8" y="0.0" width="107" height="65"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <connections>
+                                                            <action selector="teaHouse_btn_touched:" destination="BV1-FR-VrT" eventType="touchDown" id="ndc-g2-io3"/>
+                                                        </connections>
+                                                    </view>
+                                                </subviews>
+                                            </view>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="labels" translatesAutoresizingMaskIntoConstraints="NO" id="qgj-Vo-NzO" userLabel="moneyBonusContainer">
+                                        <rect key="frame" x="0.0" y="550" width="122" height="122"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgLabels.png" translatesAutoresizingMaskIntoConstraints="NO" id="F8h-Wz-P7I" userLabel="bgBonus">
+                                                <rect key="frame" x="8" y="0.0" width="111" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgLabels.png" translatesAutoresizingMaskIntoConstraints="NO" id="g6c-2s-72g" userLabel="bgMoney">
+                                                <rect key="frame" x="8" y="40" width="111" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCc-Zd-qPb" userLabel="walletValue">
+                                                <rect key="frame" x="70" y="0.0" width="45" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Cuprum-Bold" family="Cuprum" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bourse" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV0-QQ-QSO" userLabel="walleLabel">
+                                                <rect key="frame" x="5" y="0.0" width="65" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Cuprum-Bold" family="Cuprum" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIo-dt-fl2" userLabel="bonusValue">
+                                                <rect key="frame" x="70" y="40" width="45" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Cuprum-Bold" family="Cuprum" pointSize="20"/>
+                                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bonus" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaQ-IT-DLy" userLabel="bonusLabel">
+                                                <rect key="frame" x="8" y="40" width="65" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Cuprum-Bold" family="Cuprum" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AnB-Ak-oXv" userLabel="Tool" customClass="UIControl">
+                                <rect key="frame" x="960" y="30" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_param_btn.png" translatesAutoresizingMaskIntoConstraints="NO" id="HAv-YQ-Pet">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view alpha="0.10000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBe-sQ-e0f" userLabel="Tool" customClass="UIControl">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="tool_btn_touchDown:" destination="BV1-FR-VrT" eventType="touchDown" id="1hV-1t-bkK"/>
+                                        </connections>
+                                    </view>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ha7-xC-W8e">
+                                        <rect key="frame" x="1" y="0.0" width="6" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Cuprum-Regular" family="Cuprum" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2S-tb-zxs" userLabel="bonusCentral">
+                                <rect key="frame" x="420" y="300" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cuprum-Bold" family="Cuprum" pointSize="100"/>
+                                <color key="textColor" red="0.93503906250000002" green="0.71465523070000003" blue="0.3113643378" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifq-WZ-vpm" userLabel="moneyCentral">
+                                <rect key="frame" x="412" y="150" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cuprum-Bold" family="Cuprum" pointSize="100"/>
+                                <color key="textColor" red="0.93503906250000002" green="0.18513038750272934" blue="0.17178766585550145" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="tintColor" red="1" green="0.95452134580000003" blue="0.28616448820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                     </view>
+                    <connections>
+                        <outlet property="bag_btn_lab" destination="4k6-Q1-RIS" id="SpA-pP-ejL"/>
+                        <outlet property="bonusCentral" destination="p2S-tb-zxs" id="Ypb-bk-XG9"/>
+                        <outlet property="buttonsConainer" destination="ESz-aC-xRT" id="PmI-SG-w2Y"/>
+                        <outlet property="cdcContainer" destination="k4X-bV-vIf" id="wMe-ho-xOb"/>
+                        <outlet property="csee" destination="XIo-dt-fl2" id="Ngg-5e-cpX"/>
+                        <outlet property="guide_btn_lab" destination="50S-MT-7tA" id="cwE-lo-wfx"/>
+                        <outlet property="mapView" destination="fgd-uQ-5sc" id="hnl-Zz-vBh"/>
+                        <outlet property="mapViewContainer" destination="YVs-Xg-XpM" id="qDS-hf-ct9"/>
+                        <outlet property="map_btn_lab" destination="iwO-50-7YA" id="sXY-AP-0xu"/>
+                        <outlet property="menu" destination="YIk-Dw-mxz" id="FnA-Rn-Bp1"/>
+                        <outlet property="moneyBonusContainer" destination="qgj-Vo-NzO" id="Fku-iv-ye2"/>
+                        <outlet property="moneyCentral" destination="Ifq-WZ-vpm" id="Eby-4L-auD"/>
+                        <outlet property="pdfView" destination="Fzc-Yf-eUa" id="g96-BW-ADi"/>
+                        <outlet property="tableView" destination="K1h-mq-zLy" id="I25-VS-yKQ"/>
+                        <outlet property="tea_house_btn_lab" destination="HVC-Fl-s2m" id="6Z7-TR-Abo"/>
+                        <outlet property="wallet" destination="wCc-Zd-qPb" id="aXA-FV-qMI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="106.640625" y="-114.0625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backgroundBarreNav.png" width="566" height="2966"/>
+        <image name="bgItemcqc.png" width="355" height="24"/>
+        <image name="bgLabels.png" width="486" height="104"/>
+        <image name="bg_cqc.png" width="700" height="250"/>
+        <image name="btnBag.png" width="522" height="570"/>
+        <image name="btnGuide.png" width="522" height="466"/>
+        <image name="btnMap.png" width="522" height="466"/>
+        <image name="btnTrouvailles.png" width="522" height="466"/>
+        <image name="button.png" width="200" height="89"/>
+        <image name="menu_param_btn.png" width="100" height="99"/>
+        <image name="radio.png" width="40" height="40"/>
+        <image name="radioOn.png" width="40" height="40"/>
+    </resources>
 </document>
