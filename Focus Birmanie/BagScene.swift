@@ -15,12 +15,7 @@ class BagScene:GameScenes{
         sendNotification(
             notification.VIEW_BAG.rawValue,[:]   )
     }
-  /*  override func willMove(from view: SKView){
-       // let sequenceNumber = pl?.previousSequence
-      //  sendNotification(notification.CHANGE_SEQUENCE.rawValue,["numSequence":sequenceNumber as AnyObject])
-    
 
-    }*/
    
     class func fromFile()->BagScene{
         
