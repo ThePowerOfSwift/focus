@@ -1,11 +1,3 @@
-//
-//  BagScene.swift
-//  Focus Birmanie
-//
-//  Created by Laurent Aubourg on 26/09/2016.
-//  Copyright © 2016 appedufun. All rights reserved.
-//
-
 import SpriteKit
 import GameplayKit
 
